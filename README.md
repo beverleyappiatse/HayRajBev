@@ -81,3 +81,5 @@ T. A. Almeida, J. M. Gómez Hidalgo, and A. Yamakami, “Contributions to the St
 J. M. Gómez Hidalgo, T. A. Almeida, and A. Yamakami, “On the Validity of a New SMS Spam Collection,” Proc. IEEE ICMLA ’12, 2012.
 
 T. A. Almeida, J. M. Gómez Hidalgo, and T. P. Silva, “Towards SMS Spam Filtering: Results under a New Dataset,” Int. J. Inf. Secur. Sci., vol. 2, no. 1, pp. 1–18, 2013.
+
+*Chat GPT was used to aid in the development of the project goal document
