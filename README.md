@@ -40,29 +40,23 @@ The workflow consists of three main phases:
 - Confusion matrix to visualize errors  
 - ROC-AUC for overall model comparison  
 
-## Repository Structure  
-SMS-Spam-Classification/
-│
-├── data/ # Dataset (add SMSSpamCollection.txt here)
-├── notebooks/ # Google Colab / Jupyter notebooks for EDA and modeling
-├── src/ # Python scripts (preprocessing, feature engineering, modeling)
-├── figures/ # Visualizations (EDA plots, workflow diagrams, results)
-├── results/ # Model metrics, confusion matrices, summaries
-│
-├── README.md # Project documentation (this file)
-└── requirements.txt # Python dependencies
+## Project Structure  
+- `data/` – contains the SMS Spam Collection dataset  
+- `notebooks/` – Jupyter/Colab notebooks for EDA and modeling  
+- `src/` – Python scripts for preprocessing and training  
+- `README.md` – project overview  
 
 ## How to Run  
-# 1. Clone this repository
-git clone https://github.com/your-username/SMS-Spam-Classification.git
-cd SMS-Spam-Classification  
 
-# 2. Install dependencies
-pip install -r requirements.txt  
+1. Open the notebook in the `notebooks/` folder (works in Google Colab or Jupyter).  
+2. Make sure the dataset (`SMSSpamCollection.txt`) is in the `data/` folder.  
+3. Run all cells in order to preprocess the data, train models, and view results.  
 
-# 3. Place the dataset in the data/ folder
-# 4. Run notebooks from notebooks/ or scripts from src/
+## Dataset  
 
+The SMS Spam Collection dataset contains 5,572 English SMS messages labeled as either:  
+- **ham** – legitimate message  
+- **spam** – unwanted message  
 
 ## Results (Planned)
 
