@@ -53,7 +53,6 @@ SMS-Spam-Classification/
 └── requirements.txt # Python dependencies
 
 ## How to Run  
-```bash
 # 1. Clone this repository
 git clone https://github.com/your-username/SMS-Spam-Classification.git
 cd SMS-Spam-Classification  
@@ -63,6 +62,7 @@ pip install -r requirements.txt
 
 # 3. Place the dataset in the data/ folder
 # 4. Run notebooks from notebooks/ or scripts from src/
+
 
 ## Results (Planned)
 
