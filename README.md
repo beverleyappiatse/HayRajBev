@@ -40,18 +40,6 @@ The workflow consists of three main phases:
 - Confusion matrix to visualize errors  
 - ROC-AUC for overall model comparison  
 
-## Project Structure  
-- `data/` – contains the SMS Spam Collection dataset  
-- `notebooks/` – Jupyter/Colab notebooks for EDA and modeling  
-- `src/` – Python scripts for preprocessing and training  
-- `README.md` – project overview  
-
-## How to Run  
-
-1. Open the notebook in the `notebooks/` folder (works in Google Colab or Jupyter).  
-2. Make sure the dataset (`SMSSpamCollection.txt`) is in the `data/` folder.  
-3. Run all cells in order to preprocess the data, train models, and view results.  
-
 ## Dataset  
 
 The SMS Spam Collection dataset contains 5,572 English SMS messages labeled as either:  
@@ -73,6 +61,58 @@ Dataset contains only SMS message text with no personal identifiers.
 Messages were collected for academic research and may not represent SMS usage globally.
 
 Dataset use is restricted to educational and non-commercial purposes.
+
+## Executive Summary
+
+This project applies machine learning techniques to classify SMS messages as either “ham” (legitimate) or “spam” (unwanted). Using the SMS Spam Collection dataset (Almeida & Gómez Hidalgo, 2011), we conducted exploratory data analysis, built multiple classification models, and evaluated their performance. Random Forest, both with and without SMOTE oversampling, achieved the highest performance, with F1 scores and accuracy exceeding 98%. This repository is organized so that any user can reproduce the workflow and replicate the results.
+
+## Software and Platform
+
+This project was developed and tested in Python 3.10 using Google Colab (Linux-based environment). The main libraries used are:
+
+- pandas (data handling)
+
+- numpy (numerical computing)
+
+- matplotlib and seaborn (visualization)
+
+- scikit-learn (modeling, evaluation, and hyperparameter tuning)
+
+- imblearn (SMOTE oversampling for class imbalance)
+
+## Repository Map
+
+The repository is organized into the following components:
+
+- README.md: Orientation and documentation for the project
+
+- LICENSE.md: License file (MIT)
+
+- DATA folder: Contains the dataset file SMSSpamCollection.csv
+
+- SCRIPTS folder: Includes Jupyter notebooks for exploratory data analysis (EDA), model training, and hyperparameter tuning
+
+- OUTPUT folder: Stores project outputs, including saved figures, charts, and tables of results
+
+## Instructions for Reproducing Results
+
+To reproduce the results of this project:
+
+1. Clone or Download the Repository into your local environment or open it in Google Colab
+
+2. Load the Dataset from the DATA folder (SMSSpamCollection.csv)
+
+3. Run the EDA Notebook (eda.ipynb) to explore the dataset through class distribution plots, message length histograms, and other visualizations
+
+4. Train Models using the models.ipynb notebook, which implements Logistic Regression, Linear SVM, and Random Forest on both the original dataset and the SMOTE-balanced dataset
+
+5. Perform Hyperparameter Tuning with the tuning.ipynb notebook to optimize performance for each model
+
+6. Review Results in the OUTPUT folder, which contains comparative metrics such as accuracy, precision, recall, and F1-scores, as well as visualizations to support the findings
+
+## Reproducibility Statement
+
+This repository is structured to ensure reproducibility and clarity. An unfamiliar user should be able to follow the provided instructions, replicate the analysis pipeline, and confirm the results.
 
 ## References
 
